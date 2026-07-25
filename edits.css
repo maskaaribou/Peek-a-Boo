@@ -1,0 +1,107 @@
+/* FICHE DE LIEN */
+.pab_topic_postmessage,
+.rssum_listerps {
+    padding: 0;
+}
+
+.pab_topic_postbody {
+    width: 100%;
+    max-width: unset;
+}
+
+.rssummer_carnet.faye {
+    --blue1:#826C91;
+    --blue2:#5E5988;
+    --accent:#D2C4D5;
+    
+    --rssum_coul1: var(--accent);
+    --rssum_coul2: var(--blue1);
+    --pab_fond_acct:var(--blue2);
+    --pab_fond_fonc: var(--blue2);
+    --pab_fond1:#07080E;
+    --pab_fond2:#1E1E29;
+    
+    color:#DADBDE;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+.rssum_det_inter {
+    flex-direction: column;
+    gap:2px;
+}
+
+.rssum_icons {
+    flex-direction: row;
+    margin: 0;
+    overflow: hidden;
+}
+
+.rssum_details {
+    grid-area: span 1 / span 3;
+}
+
+.banban {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    position: absolute;
+    inset: 0;
+    background-image:url(https://i.pinimg.com/736x/bb/36/26/bb3626b18d0e896bc107ffe67b481bc8.jpg);
+    background-size:cover;
+    background-position:center;
+    transition: 300ms all
+}
+
+.faye:hover .banban {
+    background-image:url(https://i.pinimg.com/vwebp/1200x/c6/eb/38/c6eb38fdcdf8cdefb06ae3c60be12455.webp);
+}
+
+.rssum_rps {
+    grid-area: span 1 / span 4;
+}
+
+.rssum_listearchives ul, .rssum_listerps ul {
+    max-height: 350px;
+}
+
+.rssum_listearchives li, .rssum_listerps li {
+    padding: 0 0 8px;
+    text-indent: 0px;
+}
+
+.rssum_chronoliste{
+    max-height: unset
+}
+
+.rssum_chronoliste ul::before {
+    content: '';
+    width: 1px;
+    background: var(--pab_fond_acct);
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+}
+
+.rssum_chronoliste li strong {
+    font-family: var(--rssum_font);
+    font-weight: var(--rssum_font_wgt);
+    background: linear-gradient(to right, var(--rssum_coul1), var(--rssum_coul2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1rem;
+}
+
+.rssum_chronoliste li u {
+    color:var(--accent)!important;
+    background:transparent;
+    -webkit-text-fill-color: unset;
+}
+
+.rssummer h2{
+    color:var(--pab_fond1);
+    text-shadow: 2px 2px 0 var(--blue1)
+}
