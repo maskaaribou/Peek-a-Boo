@@ -105,3 +105,24 @@
     color:var(--pab_fond1);
     text-shadow: 2px 2px 0 var(--blue1)
 }
+
+.rssum_listearchives li u {
+    color: var(--accent) !important;
+    background: transparent;
+    -webkit-text-fill-color: unset;
+    border: 0;
+    font-family: var(--rssum_font);
+    font-weight: var(--rssum_font_wgt);
+    font-size: 1.1rem;
+}
+
+.rssum_listearchives a {
+    font-family: var(--rssum_font);
+    font-weight: var(--rssum_font_wgt);
+    background: linear-gradient(to right, var(--rssum_coul1), var(--rssum_coul2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1rem;
+}
+
