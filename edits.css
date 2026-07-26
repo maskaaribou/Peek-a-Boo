@@ -1,3 +1,5 @@
+@import url("https://kit-pro.fontawesome.com/releases/v7.2.0/css/pro.min.css");
+
 /* FICHE DE LIEN */
 .pab_topic_postmessage,
 .rssum_listerps {
@@ -72,17 +74,22 @@
 }
 
 .rssum_chronoliste{
-    max-height: unset
+    max-height: unset;
+    position:relative;
 }
 
-.rssum_chronoliste ul::before {
+.rssum_chronoliste::before {
     content: '';
     width: 1px;
     background: var(--pab_fond_acct);
     position: absolute;
-    left: 5px;
-    top: 0;
-    bottom: 0;
+    left: 25px;
+    top: 20px;
+    bottom: 60px;
+}
+
+.rssum_chronoliste ul::before {
+    display:none;
 }
 
 .rssum_chronoliste li strong {
