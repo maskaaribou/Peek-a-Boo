@@ -66,6 +66,7 @@
 
 .rssum_listearchives ul, .rssum_listerps ul {
     max-height: 350px;
+    padding: 0 20px 0 0!important;
 }
 
 .rssum_listearchives li, .rssum_listerps li {
@@ -113,8 +114,8 @@
     text-shadow: 2px 2px 0 var(--blue1)
 }
 
-.rssum_chronoliste li i,
-.rssum_listearchives li i {
+.rssum_chronoliste li strong i,
+.rssum_listearchives li strong i {
     margin: 0 10px;
 }
 
