@@ -113,8 +113,8 @@
     text-shadow: 2px 2px 0 var(--blue1)
 }
 
-.rssum_chronoliste li u i,
-.rssum_listearchives li u i {
+.rssum_chronoliste li i,
+.rssum_listearchives li i {
     margin: 0 10px;
 }
 
