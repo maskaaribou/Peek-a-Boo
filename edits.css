@@ -85,7 +85,7 @@
     position: absolute;
     left: 25px;
     top: 20px;
-    bottom: 60px;
+    bottom: 20px;
 }
 
 .rssum_chronoliste ul::before {
@@ -111,6 +111,11 @@
 .rssummer h2{
     color:var(--pab_fond1);
     text-shadow: 2px 2px 0 var(--blue1)
+}
+
+.rssum_chronoliste li u i,
+.rssum_listearchives li u i {
+    margin: 0 10px;
 }
 
 .rssum_listearchives li u {
