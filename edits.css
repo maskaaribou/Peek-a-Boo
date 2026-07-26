@@ -93,6 +93,10 @@
     display:none;
 }
 
+.pab_topic_postbody .rssummer ul li {
+    margin: 8px 20px 0 0
+}
+
 .rssum_chronoliste li strong {
     font-family: var(--rssum_font);
     font-weight: var(--rssum_font_wgt);
