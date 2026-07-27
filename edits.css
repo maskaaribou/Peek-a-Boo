@@ -187,15 +187,13 @@
     padding: 12px;
     border:12px solid var(--pab_fond1);
     gap:14px;
-    
-    --pab_grp1
 }
 
 .faye input:checked+.fonglet {
     display: flex;
     flex-direction: column;
     grid-column: span 4 / span 1;
-    max-height:802px;
+    max-height:845px;
 }
 
 .faye .fonglet > div {
