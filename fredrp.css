@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .fred {
+    --blue1:#dd5b8c;
+    --blue2:#b52b60;
+    --accent:#aac6e0;
+    
+    --rssum_coul1: var(--accent);
+    --rssum_coul2: var(--blue1);
+    --pab_fond_acct:var(--blue2);
+    --pab_fond_fonc: var(--blue2);
+    --pab_fond1:#e8ded8;
+    --pab_fond2:#f4f4f5;
     --crp17_coul1:#aac6e0;
     --crp17_coul2:#dd5b8c;
-    --crp17_font:;
-    --crp17_fontwgt:;
+    
+    color:#2a2a2a;
+    text-align: justify;
     background:var(--pab_fond2);
     position: relative;
     font-family: "Playfair Display"!important;
@@ -51,7 +62,8 @@
     font-weight: 500
 }
 
-.fred f {
+.fred f,
+.fred pnj{
     margin: 12px 48px 12px 78px;
     font-weight: 700;
     position: relative;
@@ -59,7 +71,8 @@
     display: block;
 }
 
-.fred f::before {
+.fred f::before,
+.fred pnj::before{
     inset: 0;
     position: absolute;
     background: var(--crp17_grad);
@@ -68,7 +81,8 @@
     z-index: -1;
 }
 
-.fred f::after {
+.fred f::after,
+.fred pnj::after{
     content: '';
     inset: 2px;
     background: var(--pab_fond2);
@@ -77,7 +91,8 @@
     border-radius: 11px;
 }
 
-.fred f x {
+.fred f x,
+.fred pnj x{
     margin: 0 20px;
     display: block;
     background: var(--pab_fond2);
@@ -85,7 +100,10 @@
     color:var(--blue2)
 }
 
-.fred f + br {display: none;}
+.fred pnj x{color:#2a2a2a;}
+
+.fred f + br,
+.fred pnj + br{display: none;}
 
 .fred u {
     text-decoration:2px underline var(--accent);
@@ -131,7 +149,7 @@
 }
 
 
-.fred f x:before {
+.fred x:before {
     content: "";
     position: absolute;
     top: 0;
@@ -146,18 +164,18 @@
     background-position: center;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
-.fred f#en x:before {
+.fred #en x:before {
     background-image:url(https://i.imgur.com/PRFgl9r.png);
 }
-.fred f#mo x:before {
+.fred #mo x:before {
     background-image:url(https://i.imgur.com/CWhDzlF.png);
 }
-.fred f#jp x:before {
+.fred #jp x:before {
     background-image:url(https://i.imgur.com/JxFzpKn.png);
 }
-.fred f#ita x:before {
+.fred #ita x:before {
     background-image:url(https://i.imgur.com/8HZWirg.png);
 }
-.fred f#co x:before {
+.fred #co x:before {
     background-image:url(https://i.imgur.com/NNXVzAp.png);
 }
