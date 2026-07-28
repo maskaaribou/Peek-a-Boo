@@ -194,12 +194,19 @@
     gap:14px;
 }
 
-.faye input:checked+.fonglet,
-.fred input:checked+.fonglet {
+.faye input:checked+.fonglet {
     display: flex;
     flex-direction: column;
     grid-column: span 4 / span 1;
     max-height:845px;
+}
+
+.fred .fonglet {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4 / span 1;
+    max-height:845px;
+    margin: 14px 0 0;
 }
 
 .faye .fonglet > div,
@@ -288,7 +295,7 @@
 .fred {
     --blue1:#dd5b8c;
     --blue2:#b52b60;
-    --accent:#aad8e0;
+    --accent:#aac6e0;
     
     --rssum_coul1: var(--accent);
     --rssum_coul2: var(--blue1);
