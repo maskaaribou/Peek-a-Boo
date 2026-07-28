@@ -1,1 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+.fred {
+    --crp17_coul1:#aac6e0;
+    --crp17_coul2:#dd5b8c;
+    --crp17_font:;
+    --crp17_fontwgt:;
+    background:var(--pab_fond2);
+    position: relative;
+    font-family: "Playfair Display"!important;
+    text-wrap: pretty;
+}
+
+.fred .crp17_head {
+    background-position: 50% 20%;
+    justify-content: flex-start;
+    align-items: start;
+    position: relative;
+}
+
+.fred.coderp17 .crp17_titre {
+    padding: 35px 35px 40px;
+    width:55%;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+    text-align: center;
+    font-weight: 700
+}
+
+.fred .crp17_rp {
+    padding: 40px;
+    font-size:17px;
+    font-weight: 500
+}
+
+.fred .crp17_rp::first-letter {
+  margin: -40px 5px -40px 0!important;
+}
+
+.fred .crp17_citation {
+    margin: 30px 80px 0;
+    font-size:17px;
+    text-align: center;
+}
+
+.fred .crp17_hrptxt {
+    font-size: 17px;
+    font-weight: 500
+}
+
+.fred f {
+    margin: 12px 48px 12px 78px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.fred f::before {
+    inset: 0;
+    position: absolute;
+    background: var(--crp17_grad);
+    content: '';
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.fred f::after {
+    content: '';
+    inset: 2px;
+    background: var(--pab_fond2);
+    position: absolute;
+    z-index: -1;
+    border-radius: 11px;
+}
+
+.fred f x {
+    margin: 0 20px;
+    display: block;
+    background: var(--pab_fond2);
+    padding: 20px 0;
+    color:var(--blue2)
+}
+
+.fred f + br {display: none;}
+
+.fred u {
+    text-decoration:2px underline var(--accent);
+    border: 0;
+}
+
+.fred strike {
+    text-decoration:2px line-through var(--blue2) 
+}
+
+.fred .twlist {
+    display: block;
+    position: absolute;
+    right:80px;
+    top:325px;
+    width:30%;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.fred .twlist:before{
+    content:"TWs : ";
+    font-weight: bold;
+    position: absolute;
+    left:-50px
+}
+
+.fred .twlist .tw {
+    padding: 0 5px 0 0;
+    height:65px;
+    display: block;
+    overflow: auto;
+}
+
+.fred .hidden {
+    display: none;
+}
+
+
+.fred *::selection {
+	background:var(--blue1)!important;
+	color:white
+}
+
+
+.fred f x:before {
+    content:"";
+    position: absolute;
+    left:-58px;
+    color: #2a2a2a;
+    width:40px;
+    height:40px;
+    text-align: right;
+    background-image:url(https://i.imgur.com/XqVIxph.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    align-self: center;
+    filter:drop-shadow(2px 2px 2px rgba(0,0,0,0.3))
+}
+.fred f#en x:before {
+    background-image:url(https://i.imgur.com/PRFgl9r.png);
+}
+.fred f#mo x:before {
+    background-image:url(https://i.imgur.com/CWhDzlF.png);
+}
+.fred f#jp x:before {
+    background-image:url(https://i.imgur.com/JxFzpKn.png);
+}
+.fred f#ita x:before {
+    background-image:url(https://i.imgur.com/8HZWirg.png);
+}
+.fred f#co x:before {
+    background-image:url(https://i.imgur.com/NNXVzAp.png);
+}
