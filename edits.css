@@ -272,3 +272,63 @@
     --pab_grp1:var(--blue1);
     --pab_grp2:var(--blue2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* FICHE DE LIEN FRED*/
+.fred {
+    --blue1:#dd5b8c;
+    --blue2:#b52b60;
+    --accent:#aad8e0;
+    
+    --rssum_coul1: var(--accent);
+    --rssum_coul2: var(--blue1);
+    --pab_fond_acct:var(--blue2);
+    --pab_fond_fonc: var(--blue2);
+    --pab_fond1:#e8ded8;
+    --pab_fond2:#f4f4f5;
+    
+    color:#2a2a2a;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+.fred .banban {
+    background-image:url(https://i.imgur.com/jyB2ALw.png);
+    background-position: 43%;
+}
+
+.rssummer_carnet h2 {
+    font-size:2.2rem
+}
+
+.fred xl {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    flex-wrap: wrap;
+    flex:1;
+    
+}
+
+.fred li:has(xl) {
+    display: flex;
+    gap:5px;
+}
+
+.fred .rssum_infos ul {
+    overflow: unset;
+    position: relative;
+}
+
+.fred.rssummer ul li {
+    margin-right:0!important
+}
