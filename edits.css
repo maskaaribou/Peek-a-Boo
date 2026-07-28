@@ -142,14 +142,16 @@
     font-size: 1.1rem;
 }
 
-.faye:has(.nav-tabs) {
+.faye:has(.nav-tabs),
+.fred:has(.nav-tabs){
     margin: 14px 0 0;
     display: flex;
     flex-direction: column;
     gap:14px;
 }
 
-.faye:has(.nav-tabs) h3 {
+.faye:has(.nav-tabs) h3,
+.fred:has(.nav-tabs) h3 {
     all: unset;
     color: var(--pab_fond1);
     text-shadow: 2px 2px 0 var(--blue1);
@@ -158,7 +160,8 @@
     font-weight: bolder;
 }
 
-.faye .nav-tabs {
+.faye .nav-tabs,
+.fred .nav-tabs {
     grid-column: span 4;
     display: flex;
     gap:14px;
@@ -166,7 +169,8 @@
     justify-content: center;
 }
 
-.faye .nav-tabs label {
+.faye .nav-tabs label,
+.fred .nav-tabs label {
     flex:1;
     padding: 12px;
     background: linear-gradient(to right, var(--rssum_coul1), var(--rssum_coul2));
@@ -175,7 +179,8 @@
     text-wrap: nowrap;
 }
 
-.faye input {
+.faye input,
+.fred input {
     display: none!important;
 }
 
@@ -189,14 +194,16 @@
     gap:14px;
 }
 
-.faye input:checked+.fonglet {
+.faye input:checked+.fonglet,
+.fred input:checked+.fonglet {
     display: flex;
     flex-direction: column;
     grid-column: span 4 / span 1;
     max-height:845px;
 }
 
-.faye .fonglet > div {
+.faye .fonglet > div,
+.fred .fonglet > div {
     border: 1px solid var(--pab_fond_acct);
     border-radius: 6px;
     padding: 4px;
@@ -215,7 +222,8 @@
     border:1px solid var(--accent)
 }
 
-.faye .fonglet > div img {
+.faye .fonglet > div img,
+.fred .fonglet > div img {
     height:100%;
     aspect-ratio:1;
     image-rendering: pixelated;
@@ -251,14 +259,16 @@
     background-color:var(--accent)
 }
 
-.faye .fonglet > div {
+.faye .fonglet > div,
+.fred .fonglet > div {
     background: var(--pab_grp1);
     border:var(--pab_grp1);
     .rssum_lien_inter > h4, .rssum_lien_tags > span > strong {background: linear-gradient(to right, var(--pab_grp1), var(--pab_grp2));}
     .rssum_lien_barre > div {background: linear-gradient(to right, var(--pab_grp1), var(--pab_grp2));}
 }
 
-.faye .fonglet > .idk {
+.faye .fonglet > .idk,
+.fred .fonglet > .idk {
     --pab_grp1:var(--blue1);
     --pab_grp2:var(--blue2);
 }
