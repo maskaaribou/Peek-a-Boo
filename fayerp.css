@@ -185,19 +185,24 @@
     order:3;
 }
 
-.FayeRP r rp f {
+.FayeRP r rp f,
+.FayeRP r rp pnj {
     display: block;
     width: 100%;
     position: relative;
     z-index: 1;
     font-weight: bold;
-    border-left:3px solid var(--accent);
-    padding: 3px 0 0 10px;
+    border-left:3px solid var(--accent2);
+    padding: 0 0 0 10px;
     position: relative;
 	margin: 0 0 0 42px;
 	min-height:31px;
 	width: calc(100% - 42px);
+	align-content: center;
+    color:var(--accent)
 }
+
+.FayeRP r rp pnj {color:var(--accent3)}
 
 .FayeRP r rp f:before {
     content: "";
