@@ -149,7 +149,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width:397px;
+    width:100%;
+    margin: 0 0 0 auto;
     transition:500ms all
 }
 
@@ -193,6 +194,42 @@
     border-left:3px solid var(--accent);
     padding: 3px 0 0 10px;
     position: relative;
+	margin: 0 0 0 42px;
+	min-height:31px;
+	width: calc(100% - 42px);
+}
+
+.FayeRP r rp f:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -44px;
+    color: #2a2a2a;
+    width: 27px;
+    height: 100%;
+    text-align: right;
+    background-image: url(https://i.imgur.com/PRFgl9r.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+    filter: drop-shadow(2px 0 0 var(--accent3))
+            drop-shadow(-2px 0 0 var(--accent3))
+            drop-shadow(0 2px 0 var(--accent3))
+            drop-shadow(0 -2px 0 var(--accent3))
+}
+
+.FayeRP r rp f#fr:before {
+    background-image:url(https://i.imgur.com/YLvmK5A.png);
+}
+.FayeRP r rp f#mo:before {
+    background-image:url(https://i.imgur.com/CWhDzlF.png);
+}
+.FayeRP r rp f#jp:before {
+    background-image:url(https://i.imgur.com/JxFzpKn.png);
+}
+.FayeRP r rp f#en:before {
+    background-image:url(https://i.imgur.com/PRFgl9r.png);
 }
 
 .FayeRP r rp u {
